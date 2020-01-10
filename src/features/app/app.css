@@ -3,6 +3,17 @@ body {
   margin: 0;
   font-family: roboto;
 }
-.app {
+
+.app-content {
   padding: 1rem;
+}
+
+.bg-image.visible {
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.bg-image.hidden {
+  opacity: 0;
+  transition: 1s opacity;
 }
