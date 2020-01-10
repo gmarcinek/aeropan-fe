@@ -13,6 +13,7 @@ import * as serviceWorker from './serviceWorker'
 import { BrowserRouter as Router, } from 'react-router-dom'
 
 import {setConfiguration} from 'react-grid-system'
+import './index.css'
 
 setConfiguration({
   breakpoints: [479, 767, 991],
