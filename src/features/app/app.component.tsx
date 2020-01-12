@@ -1,15 +1,34 @@
 import React from 'react'
+import ReactPlayer from 'react-player'
+
 import { AppRouter } from './app.router'
 import { Header } from '../header'
 import { Footer } from '../footer'
 import './app.css'
-import { ImageSlider } from '../image.slider'
 
 export class AppComponent extends React.Component<{}, { index: number }> {
   public render() {
+    const width: number = window.innerWidth
+    const height: number = window.innerHeight
+    const file = width - height < 0
+    ? 'http://aeropan.pl/NARODOWY_SH030_INSTA_v001.mp4'
+    : 'http://aeropan.pl/NARODOWY_MAIN_HD_v001.mp4'
+
     return (
       <>
-        <ImageSlider />
+        <ReactPlayer
+          loop
+          playing
+          url={file}
+          width='100vw'
+          height='100vh'
+          muted
+          style={{
+            zIndex: '-100',
+            position: 'absolute',
+          }}
+        />
+
         <div className='app-content'>
           <Header />
           <AppRouter />

@@ -6,14 +6,10 @@ body {
 
 .app-content {
   padding: 1rem;
+  z-index: 1;
+  position: relative;
 }
 
-.bg-image.visible {
-  opacity: 1;
-  transition: 0.5s opacity;
-}
-
-.bg-image.hidden {
-  opacity: 0;
-  transition: 1s opacity;
+video {
+  object-fit: cover !important;
 }
