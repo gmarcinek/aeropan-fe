@@ -11,8 +11,8 @@ export class AppComponent extends React.Component<{}, { index: number }> {
     const width: number = window.innerWidth
     const height: number = window.innerHeight
     const file = width - height < 0
-    ? 'http://aeropan.pl/NARODOWY_SH030_INSTA_v001.mp4'
-    : 'http://aeropan.pl/NARODOWY_MAIN_HD_v001.mp4'
+      ? 'http://serwer2083856.home.pl/NARODOWY_SH030_INSTA_v001.mp4'
+      : 'http://serwer2083856.home.pl/NARODOWY_MAIN_HD_v001.mp4'
 
     return (
       <>
