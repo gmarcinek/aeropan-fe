@@ -1,0 +1,107 @@
+@import 'variables.css';
+
+* {
+  box-sizing: border-box;
+}
+
+
+.shadow-inset-top {
+  box-shadow: inset 0 8px 5px -4px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-bottom {
+  box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--theme-dark-gray);
+}
+
+img {
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.break-05 {
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.break-1 {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.break-2 {
+  width: 100%;
+  padding: 1rem;
+}
+
+.break-3 {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.break-4 {
+  width: 100%;
+  padding: 2rem;
+}
+
+.break-5 {
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.break-6 {
+  width: 100%;
+  padding: 3rem;
+}
+
+.break-7 {
+  width: 100%;
+  padding: 3.5rem;
+}
+
+.break-8 {
+  width: 100%;
+  padding: 4rem;
+}
+
+.break-line {
+  width: 100%;
+  margin: 1rem 0rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+}
+
+.flex-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.flex-inline > * {
+  margin-right: 1rem;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.flex-vertical-align {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}

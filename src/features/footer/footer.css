@@ -1,0 +1,10 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+.footer i {
+  font-size: 1.2rem;
+}
