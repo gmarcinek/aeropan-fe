@@ -127,13 +127,6 @@ function App() {
                     </div>
                   </div>
 
-                  <div class='slide' id='slide2-2'>
-                    <div class='fp-bg'>
-                      <img className='covered' src='https://lh3.googleusercontent.com/6Sz0tMrpIBoWwskPtkB_sa5nXiGIdTddnrUmOt1U0D1FMTET6s7wmWMqAC5TcZiBaWOXrUthJ7JzEMc-qNjVCLXK_p7OymUq3lZ6GzZud8DZ83uywnypMGh86o4QuD0_GNsp6fV4feysM830vAzZuSF4zvfKOXEtUFIIgNN8zi9ptz3ixPDg9DoJGJMI5kgYJEKL5lbJkQsDS-OIxlLUA4xEq80qQN0Z_2c-Fu00zeEmbDVQzssVh18HqByM6j-GNHUdqtkB0oVXozMbCAcxIoIlXFanqTAMxJhv7Wrz3z2tOjuFMpWwGMOYtLaOYiDLAyQGJ8wFLSDLTIpPOcjVLutx-UAo2JcvuCRTnelJYXfW_hy8lf5OTc1xXAlNQtfBGOazYGWjv8SI4FAPcD__2rM-Y_R82IAY5Nz1fYSxIoGeMTU0QSrB8gb4_c7iT9k-w9mosYn3bWVp6rtO8dmpm-WpGronwJAph9lptaHnG0rKReS1AQac83Z2A5sW4pQesMoBibpZ4vHWzpQMhB6roPLY-iqg3yHgy_aBy7WT3dZUYecc0JrspsZrrEj1gMmXBi9rDUV08oHKK9M6c9VQ5rtIaUUvh8bUBiTJITXM5p7ksuMpw0Zq7PkMFa7e2xTr28oNzn62QJ3K9-stVRUYcRb6BnO8o5C3KU9ZvfKCSNi-t9xpUCQR8-aE4En9RI7BIFdKT6zeaZTR7Abbl-BBEHA47Bsrbp76ep7kGb8ZaoVoozPn=s2300' />
-                    </div>
-                    <div class='fp-content'>
-                    </div>
-                  </div>
 
                   <div class='slide' id='slide2-2'>
                     <div class='fp-bg'>
