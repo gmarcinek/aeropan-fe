@@ -49,9 +49,11 @@
 
 .fp-controlArrow.fp-next {
   right: 50px!important;
+  border-color: transparent #774e4e00 #d8c1c100 #ffffff40;
 }
 .fp-controlArrow.fp-prev {
   left: 15px!important;
+  border-color: transparent #ffffff40 #d8c1c100 transparent;
 }
 
 .slide .fp-content {
@@ -64,5 +66,6 @@
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid #ffffff99;
+  background: #ffffff55!important;
 }
