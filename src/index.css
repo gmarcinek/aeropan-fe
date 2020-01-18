@@ -1,10 +1,13 @@
-@import 'styles/normalize.css';
-@import 'styles/typography.css';
-@import 'styles/global.css';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-@import 'styles/fontello/animation.css';
-@import 'styles/fontello/fontello-codes.css';
-@import 'styles/fontello/fontello-embedded.css';
-@import 'styles/fontello/fontello-ie7-codes.css';
-@import 'styles/fontello/fontello-ie7.css';
-@import 'styles/fontello/fontello.css';
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
