@@ -30,6 +30,7 @@ export class AppComponent extends React.Component<{}, { index: number }> {
         />
 
         <div className='app-content'>
+          
           <Header />
           <AppRouter />
           <Footer />
