@@ -44,7 +44,7 @@ function app() {
         scrollOverflow={true}
         scrollOverflowReset={true}
         scrollOverflowOptions={null}
-        touchSensitivity={30}
+        touchSensitivity={15}
         bigSectionsDestination={null}
 
         //Accessibility
