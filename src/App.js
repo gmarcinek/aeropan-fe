@@ -146,7 +146,7 @@ function app() {
                   {imageSource.map((imageUrl, index) => (
                     <div className='slide' id={`slide2-${index}`} key={`slide2-${index}`}>
                       <div className='fp-bg'>
-                        <img className='covered' src={imageUrl} />
+                        <img className='covered' alt='bg' src={imageUrl} />
                       </div>
                       <div className='fp-content t-white' style={{
                         position: 'absolute',
