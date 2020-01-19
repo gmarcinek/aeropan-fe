@@ -13,6 +13,26 @@
   color: white;
 }
 
+.article-container {
+  padding: 0 2rem;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.article {
+  display: block;
+  margin-right: 3%;
+  width: 360px;
+}
+
+@media (max-width: 991px) {
+  .article {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -49,9 +69,89 @@
   border: 1px solid #ffffff99;
   background: #ffffff55!important;
 }
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
 
 @media (max-width: 991px) {
   .fp-controlArrow {
     display: none;
   }
+}
+
+.break-05 {
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.break-1 {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.break-2 {
+  width: 100%;
+  padding: 1rem;
+}
+
+.break-3 {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.break-4 {
+  width: 100%;
+  padding: 2rem;
+}
+
+.break-5 {
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.break-6 {
+  width: 100%;
+  padding: 3rem;
+}
+
+.break-7 {
+  width: 100%;
+  padding: 3.5rem;
+}
+
+.break-8 {
+  width: 100%;
+  padding: 4rem;
+}
+
+.break-line {
+  width: 100%;
+  margin: 1rem 0rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+}
+
+.flex-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.flex-inline > * {
+  margin-right: 1rem;
+}
+
+.flex-end {
+  align-self: flex-end;
 }

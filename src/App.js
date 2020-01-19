@@ -15,18 +15,10 @@ function App() {
 
   return (
     <>
-      <h1 id='#header' style={{
-        zIndex: 333,
-        color: '#fff',
-        position: 'fixed',
-        margin: '0.5rem 0rem 0rem 1rem'
-      }}>
-        AEROPAN
-    </h1>
       <ReactFullpage
         licenseKey={'YOUR_KEY_HERE'}
         scrollingSpeed={1000}
-        menu='#header'
+        // menu='#header'
         lockAnchors={false}
         anchors={['offer', 'realisations', 'contact']}
         navigation={true}
@@ -80,37 +72,81 @@ function App() {
         render={({ state, fullpageApi }) => {
           return (
             <div>
-
               <ReactFullpage.Wrapper>
                 <div className='section'>
                   <video
                     loop
                     autoPlay
-                    data-autoPlay
+                    data-autoplay
                     src={videoFile}
                     muted
                     className='covered'
                   />
+
+                  <div className='fp-content t-white' style={{
+                    position: 'absolute',
+                    bottom: '2%',
+                    left: '50%',
+                    transform: 'translate(-50%)'
+                  }}>
+                    <h1 style={{ textAlign: 'center', marginBottom: '0' }}>AEROPAN FILMS</h1>
+                    <div style={{ textAlign: 'center' }}>PRESENTS</div>
+                  </div>
                 </div>
 
-                <div class='section' id='section2'>
-                  <div class='slide' id='slide2-1'>
-                    <div class='fp-content t-white'>
-                      <h1>Photography sessions</h1>
+                <div className='section' id='section2'>
+                  <div className='slide' id='slide2-1'>
+                    <div className='fp-content t-white'>
+
+                      <h1 style={{ textAlign: 'center', marginBottom: '0' }}>AEROPAN PHOTOGRAPHY</h1>
+                      <div style={{ textAlign: 'center' }}>PRESENTS</div>
+                      <div className='break-8' />
+
+                      <div className='article-container'>
+                        <div className='article'>
+                          <h2>Exterior photography</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <button>Call Now</button>
+                        </div>
+
+                        <div className='article'>
+                          <h2>Interior photography</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <button>Call Now</button>
+                        </div>
+
+                        <div className='article'>
+                          <h2>Aerial photography</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <button>Call Now</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   {imageSource.map((imageUrl, index) => (
-                    <div class='slide' id={`slide2-${index}`}>
-                      <div class='fp-bg'>
+                    <div className='slide' id={`slide2-${index}`} key={`slide2-${index}`}>
+                      <div className='fp-bg'>
                         <img className='covered' src={imageUrl} />
+                      </div>
+                      <div className='fp-content t-white' style={{
+                        position: 'absolute',
+                        bottom: '10%',
+                        left: '50%',
+                        transform: 'translate(-50%)'
+                      }}>
+                        <h1 style={{ fontSize: '3vw' }}>PHOTOGRAPHY</h1>
                       </div>
                     </div>
                   ))}
-
                 </div>
-                <div className='section'></div>
-                <div className='section'></div>
+
+                <div className='section'>
+                  <div className='fp-content t-white'>
+                    <h1 style={{ textAlign: 'center', marginBottom: '0' }}>AEROPAN CONTACT</h1>
+                    <div style={{ textAlign: 'center' }}>CALL NOW</div>
+                  </div>
+                </div>
               </ReactFullpage.Wrapper>
             </div>
           );
