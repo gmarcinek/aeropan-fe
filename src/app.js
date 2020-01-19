@@ -54,7 +54,7 @@ function app() {
         //Design
         controlArrows={true}
         verticalCentered={true}
-        sectionsColor={['#000', 'rgb(16, 22, 27)', 'rgb(16, 32, 37)']}
+        sectionsColor={['#000', 'rgb(39, 38, 39)', 'rgb(16, 32, 37)']}
         paddingTop='0px'
         paddingBottom='0px'
         fixedElements='#header'
