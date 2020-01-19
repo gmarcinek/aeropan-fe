@@ -23,12 +23,15 @@ p {
   font-size: 1.1em;
 }
 h2 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @media (max-width: 1020px) {
   p {
-    font-size: larger;
+    font-size: 1.1em;
+  }
+  h1, h2, h3, h4 {
+    font-size: x-large;
   }
   .article {
     display: block;
@@ -36,6 +39,7 @@ h2 {
     max-width: 100%;
   }
 }
+
 
 button {
   border: none;
@@ -80,15 +84,15 @@ button.secondary {
   max-width: 400px;
 }
 
-.slide .fp-content {
-  padding: 0 4rem;
-}
-
 @media (max-width: 1020px) {
   .article {
     display: block;
     width: 100%;
     max-width: 100%;
+  }
+
+  .slide .fp-content {
+    padding: 0 2rem;
   }
 }
 .app-link {

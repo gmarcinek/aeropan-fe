@@ -86,6 +86,7 @@ function app() {
                     position: 'absolute',
                     bottom: '2%',
                     left: '50%',
+                    width: '100%',
                     transform: 'translate(-50%)'
                   }}>
                     <h1 style={{ textAlign: 'center', marginBottom: '0' }}>AEROPAN <span style={{ fontWeight: '200' }}>FILMS</span></h1>
@@ -97,7 +98,7 @@ function app() {
                   <div className='slide' id='slide2-1'>
                     <div className='fp-content t-white'>
 
-                      <h1 style={{ textAlign: 'center', marginBottom: '0' }}>AEROPAN <span style={{ fontWeight: '200' }}>PHOTOGRAPHY</span></h1>
+                      <h1 style={{ textAlign: 'center', marginBottom: '0', width: '100%' }}>AEROPAN <span style={{ fontWeight: '200' }}>PHOTOGRAPHY</span></h1>
                       <div style={{ textAlign: 'center' }}>PRESENTS</div>
 
                       <div className='article-container'>
