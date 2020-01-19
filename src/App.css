@@ -13,6 +13,7 @@
   color: white;
 }
 
+
 p, h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
 }
@@ -85,8 +86,8 @@ button.secondary {
     max-width: 100%;
   }
 }
-
 .app-link {
+
   color: #61dafb;
 }
 
