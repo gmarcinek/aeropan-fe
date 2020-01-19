@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage'
-import './App.css'
-import { DESCTOP_IMAGES, MOBILE_IMAGES } from './App.service';
+import './app.css'
+import { DESCTOP_IMAGES, MOBILE_IMAGES } from './app.service';
 
-function App() {
+function app() {
   const width = window.innerWidth
   const height = window.innerHeight
   const videoFile = width - height < 0
@@ -17,8 +17,7 @@ function App() {
     <>
       <ReactFullpage
         licenseKey={'YOUR_KEY_HERE'}
-        scrollingSpeed={1000}
-        // menu='#header'
+        scrollingSpeed={700}
         lockAnchors={false}
         anchors={['offer', 'realisations', 'contact']}
         navigation={true}
@@ -45,7 +44,7 @@ function App() {
         scrollOverflow={true}
         scrollOverflowReset={true}
         scrollOverflowOptions={null}
-        touchSensitivity={15}
+        touchSensitivity={30}
         bigSectionsDestination={null}
 
         //Accessibility
@@ -65,7 +64,7 @@ function App() {
         parallax={true}
         parallaxOptions={{
           type: 'reveal',
-          percentage: 62,
+          percentage: 100,
           property: 'translate'
         }}
 
@@ -100,25 +99,44 @@ function App() {
 
                       <h1 style={{ textAlign: 'center', marginBottom: '0' }}>AEROPAN PHOTOGRAPHY</h1>
                       <div style={{ textAlign: 'center' }}>PRESENTS</div>
-                      <div className='break-8' />
 
                       <div className='article-container'>
+                      <div className='break-8' />
                         <div className='article'>
                           <h2>Exterior photography</h2>
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <div className='break-1' />
                           <button>Call Now</button>
+                          <button className='secondary'>Read More</button>
+                          <div className='break-4' />
                         </div>
 
                         <div className='article'>
                           <h2>Interior photography</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                          <div className='break-1' />
                           <button>Call Now</button>
+                          <button className='secondary'>Read More</button>
+                          <div className='break-4' />
                         </div>
 
                         <div className='article'>
                           <h2>Aerial photography</h2>
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <div className='break-1' />
                           <button>Call Now</button>
+                          <button className='secondary'>Read More</button>
+                          <div className='break-4' />
+                        </div>
+
+                        <div className='article'>
+                          <h2>Portrait photography</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <div className='break-1' />
+                          <button>Call Now</button>
+                          <button className='secondary'>Read More</button>
+                          <div className='break-8' />
+                          <div className='break-8' />
                         </div>
                       </div>
                     </div>
@@ -157,4 +175,4 @@ function App() {
   );
 }
 
-export default App;
+export default app;

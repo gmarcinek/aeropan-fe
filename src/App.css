@@ -1,8 +1,8 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-header {
+.app-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -13,19 +13,17 @@
   color: white;
 }
 
-.article-container {
-  padding: 0 2rem;
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
+p, h1, h2, h3, h4 {
+  margin-bottom: 0.5rem;
 }
-.article {
-  display: block;
-  margin-right: 3%;
-  width: 360px;
+p {
+  margin-top: 0.1rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1020px) {
+  p {
+    font-size: larger;
+  }
   .article {
     display: block;
     width: 100%;
@@ -33,7 +31,62 @@
   }
 }
 
-.App-link {
+button {
+  border: none;
+  background: #1ca592;
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+button:hover {
+  opacity: 0.6;
+  transition: opacity 0.5s;
+}
+
+button.primary {
+  border: none;
+  background: #1ca592;
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+}
+button.secondary {
+  border: none;
+  background: #3f5465;
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+}
+
+.article-container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.article {
+  display: block;
+  margin-right: 2rem;
+  width: 46%;
+  max-width: 400px;
+}
+
+.slide .fp-content {
+  padding: 0 4rem;
+}
+
+@media (max-width: 1020px) {
+  .article {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.app-link {
   color: #61dafb;
 }
 
@@ -56,10 +109,6 @@
   border-color: transparent #ffffff40 #d8c1c100 transparent;
 }
 
-.slide .fp-content {
-  padding: 0 5rem;
-}
-
 .fp-slidesNav {
   display: flex;
   justify-content: space-evenly;
@@ -76,7 +125,7 @@
   height: 100%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1020px) {
   .fp-controlArrow {
     display: none;
   }
