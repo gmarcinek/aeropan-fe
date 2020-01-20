@@ -9,6 +9,7 @@ function app() {
   const videoFile = width - height < 0
     ? 'http://serwer2083856.home.pl/NARODOWY_SH030_INSTA_v001.mp4'
     : 'http://serwer2083856.home.pl/NARODOWY_MAIN_HD_v001.mp4'
+
   const imageSource = width - height < 0
     ? MOBILE_IMAGES
     : DESCTOP_IMAGES
@@ -54,7 +55,7 @@ function app() {
         //Design
         controlArrows={true}
         verticalCentered={true}
-        sectionsColor={['#000', 'rgb(16, 22, 27)', 'rgb(16, 32, 37)']}
+        sectionsColor={['#000', 'rgb(39, 38, 39)', 'rgb(16, 32, 37)']}
         paddingTop='0px'
         paddingBottom='0px'
         fixedElements='#header'
@@ -84,7 +85,7 @@ function app() {
 
                   <div className='fp-content t-white' style={{
                     position: 'absolute',
-                    bottom: '2%',
+                    top: '2%',
                     left: '50%',
                     width: '100%',
                     transform: 'translate(-50%)'
