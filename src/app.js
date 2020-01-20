@@ -7,8 +7,8 @@ function app() {
   const width = window.innerWidth
   const height = window.innerHeight
   const videoFile = width - height < 0
-    ? 'http://serwer2083856.home.pl/NARODOWY_SH030_INSTA_v001.mp4'
-    : 'http://serwer2083856.home.pl/NARODOWY_MAIN_HD_v001.mp4'
+    ? 'https://serwer2083856.home.pl/NARODOWY_SH030_INSTA_v001.mp4'
+    : 'https://serwer2083856.home.pl/NARODOWY_MAIN_HD_v001.mp4'
 
   const imageSource = width - height < 0
     ? MOBILE_IMAGES
