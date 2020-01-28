@@ -1,0 +1,7 @@
+#section-google-maps a {
+  text-decoration: none;
+}
+
+#section-google-maps a:hover {
+  color: black;
+}
