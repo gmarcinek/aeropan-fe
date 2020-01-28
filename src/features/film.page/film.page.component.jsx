@@ -3,7 +3,7 @@ import {isBrowser} from 'react-device-detect'
 
 export default class FilmPageComponent extends React.Component {
   render() {
-    const mobileVideo = 'https://serwer2083856.home.pl/NARODOWY_SH030_INSTA_v001.mp4'
+    const mobileVideo = 'https://serwer2083856.home.pl/DJI_0225_2.mp4'
     const browserVideo = 'https://serwer2083856.home.pl/NARODOWY_MAIN_HD_v001.mp4'
 
     return (
