@@ -7,7 +7,6 @@ import { DESCTOP_IMAGES, MOBILE_IMAGES } from '../app'
 import {
   BrowserView,
   MobileView,
-  isBrowser
 } from 'react-device-detect'
 
 export default class PhotographyPageComponent extends React.Component {

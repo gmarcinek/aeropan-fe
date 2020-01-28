@@ -1,6 +1,8 @@
 import React from 'react'
 import './google.maps.page.css'
 
+
+
 export default class GoogleMapsPageComponent extends React.Component {
   render() {
     return (
@@ -16,8 +18,9 @@ export default class GoogleMapsPageComponent extends React.Component {
               <iframe className='covered'
                 src='https://www.google.com/maps/embed?pb=!4v1580168837211!6m8!1m7!1sCAoSLEFGMVFpcE1FUmZldTdKX2pJd3V4T1dRaXFiRVBpLXE1eFJrYmd1VTY4bDd5!2m2!1d51.21089358218426!2d22.54359995806683!3f0!4f0!5f0.7820865974627469'
                 width='100%' height='100%'
-                frameBorder='20'
-                style={{ border: 0 }}></iframe>
+                disableDefaultUI
+                style={{ border: 0 }}>
+              </iframe>
             </div>
             <a href={'/#googlemaps'} className='fp-content ap-galery__header-top t-white'>
               <h1 style={{ textAlign: 'center', marginBottom: '0', width: '100%' }}>AEROPAN <span style={{ fontWeight: '200' }}>GOOGLE MAPS</span></h1>
