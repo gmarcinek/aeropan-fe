@@ -5,6 +5,7 @@ import FilmPageComponent from '../film.page/film.page.component'
 import PhotographyPageComponent from '../photography.page/photography.page.component'
 import ContactPageComponent from '../contact.page/contact.page.component'
 import GoogleMapsPageComponent from '../google.maps.page/google.maps.page.component'
+import './app.css'
 
 export default class App extends React.Component {
   render() {

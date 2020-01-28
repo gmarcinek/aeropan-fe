@@ -6,7 +6,8 @@ import PortraitWidgetComponent from './portrait.widget/portrait.widget.component
 import { DESCTOP_IMAGES, MOBILE_IMAGES } from '../app'
 import {
   BrowserView,
-  MobileView
+  MobileView,
+  isBrowser
 } from 'react-device-detect'
 
 export default class PhotographyPageComponent extends React.Component {
