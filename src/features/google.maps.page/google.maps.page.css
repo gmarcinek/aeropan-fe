@@ -15,10 +15,10 @@
     top: 21px;
   }
   #section-google-maps .fp-controlArrow.fp-next {
-    right: 30px;
+    right: 30px!important;
   }
   #section-google-maps .fp-controlArrow.fp-prev {
-    right: 0px
+    right: 0px!important;
   }
 
 }

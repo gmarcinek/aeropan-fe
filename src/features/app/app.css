@@ -1,5 +1,5 @@
 .fp-controlArrow.fp-next {
-  right: 50px;
+  right: 50px!important;
   border: none;
   position: absolute;
 }
@@ -17,14 +17,14 @@
   cursor: pointer;
   border: none;
   position: absolute;
-  top: 16px;
+  top: 16px!important;
 }
 .fp-controlArrow.fp-next:after {
-  right: 0px;
+  right: 0px!important;
   content: '\E80B';
 }
 
 .fp-controlArrow.fp-prev:after {
-  left: 15px;
+  left: 15px!important;
   content: '\E80A';
 }
