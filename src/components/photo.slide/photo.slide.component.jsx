@@ -6,7 +6,7 @@ export default class PhotoSlide extends React.Component {
     titleBold: '',
     titleRegular: '',
     img: '',
-    index: ''
+    index: 0
   }
 
   render() {
@@ -28,6 +28,6 @@ PhotoSlide.propTypes = {
   titleBold: PropTypes.string,
   titleRegular: PropTypes.string,
   img: PropTypes.string,
-  index: PropTypes.string
+  index: PropTypes.number
 }
 

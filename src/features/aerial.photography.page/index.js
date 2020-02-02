@@ -1,0 +1,1 @@
+export * from './aerial.photography.page.component'
