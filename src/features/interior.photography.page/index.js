@@ -1,0 +1,1 @@
+export * from './interior.photography.page.component'

@@ -1,0 +1,1 @@
+export * from './exterior.photography.page.component'

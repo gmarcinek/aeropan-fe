@@ -1,5 +1,15 @@
+@import 'styles/fontello/animation.css';
+@import 'styles/fontello/fontello-codes.css';
+@import 'styles/fontello/fontello-embedded.css';
+@import 'styles/fontello/fontello-ie7-codes.css';
+@import 'styles/fontello/fontello-ie7.css';
+@import 'styles/fontello/fontello.css';
+
 * {
   box-sizing: border-box;
+}
+img {
+  padding: 0px;
 }
 
 body {
@@ -45,7 +55,7 @@ h2 {
 
 button {
   border: none;
-  background: #1ca592;
+  background: #475169;
   width: 120px;
   height: 40px;
   color: #ffffff;
@@ -109,17 +119,7 @@ button.secondary {
   .fp-controlArrow__always-visible .fp-controlArrow {
     display: block;
   }
-  .fp-controlArrow__always-visible .fp-controlArrow.fp-next {
-    right: 50px!important;
-    border-width: 16px 0 16px 19px;
-    border-color: transparent transparent transparent #ffffffcc;
-  }
-  .fp-controlArrow__always-visible .fp-controlArrow.fp-prev {
-    left: 15px!important;
-    border-width: 16px 19px 16px 0;
-    border-color: transparent #ffffffcc transparent transparent;
-  }
-  
+
   #fp-nav {
     right: 5px!important;
   }
@@ -151,15 +151,6 @@ button.secondary {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-}
-
-.fp-controlArrow.fp-next {
-  right: 50px!important;
-  border-color: transparent #774e4e00 #d8c1c100 #ffffff40;
-}
-.fp-controlArrow.fp-prev {
-  left: 15px!important;
-  border-color: transparent #ffffff40 #d8c1c100 transparent;
 }
 
 .fp-slidesNav {

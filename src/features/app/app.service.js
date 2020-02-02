@@ -1,10 +1,16 @@
-export const isScreenVerticalOriented = () => window.innerWidth - window.innerHeight < 0
-
 export const FULLPAGE_CONFIG = {
   licenseKey: 'YOUR_KEY_HERE',
   scrollingSpeed: 700,
   lockAnchors: false,
-  anchors: ['offer', 'realisations', 'googlemaps', 'contact'],
+  anchors: [
+    'film',
+    'photography',
+    'exteriorPhotography',
+    'interiorPhotography',
+    'aerialPhotography',
+    'googlemaps',
+    'contact'
+  ],
   navigation: true,
   navigationPosition: 'right',
   slidesNavigation: true,
@@ -39,7 +45,15 @@ export const FULLPAGE_CONFIG = {
   //Design
   controlArrows: true,
   verticalCentered: true,
-  sectionsColor: ['#000', 'rgb(39, 38, 39)', 'rgb(197, 163, 197)', 'rgb(16, 32, 37)'],
+  sectionsColor: [
+    '#000', // film
+    'rgb(39, 38, 39)', // photography
+    'rgb(39, 38, 39)', // exterior photography
+    'rgb(42, 49, 65)', // interior photography
+    'rgb(46, 54, 49)', // aerial photography
+    'rgb(197, 163, 197)', // google maps
+    'rgb(16, 32, 37)' // contact
+  ],
   paddingTop: '0px',
   paddingBottom: '0px',
   fixedElements: '#header',
