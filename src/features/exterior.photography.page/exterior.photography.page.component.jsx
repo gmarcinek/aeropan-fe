@@ -29,7 +29,7 @@ export default class ExteriorPhotographyPage extends React.Component {
 
                 <Col sm={5}>
                   <Row>
-                    <a href={'#interiorPhotography/1'}><button>Watch gallery</button></a>
+                    <a href={'#exteriorPhotography/1'}><button>Watch gallery</button></a>
                     <Icon name='forward' color='white' size={'2rem'} />
                   </Row>
                   <div className='break-1' />
