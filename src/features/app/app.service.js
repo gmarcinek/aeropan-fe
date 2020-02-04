@@ -4,7 +4,7 @@ export const FULLPAGE_CONFIG = {
   lockAnchors: false,
   anchors: [
     'film',
-    'photography',
+    // 'photography',
     'exteriorPhotography',
     'interiorPhotography',
     'aerialPhotography',
@@ -47,7 +47,7 @@ export const FULLPAGE_CONFIG = {
   verticalCentered: true,
   sectionsColor: [
     '#000', // film
-    'rgb(39, 38, 39)', // photography
+    // 'rgb(39, 38, 39)', // photography
     'rgb(39, 38, 39)', // exterior photography
     'rgb(42, 49, 65)', // interior photography
     'rgb(46, 54, 49)', // aerial photography
