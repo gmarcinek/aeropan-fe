@@ -159,7 +159,7 @@ button.secondary {
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-  border: 2px solid #ffffffcc;
+  border: 2px solid #ffffffcc!important;
   background: #000000!important;
 }
 
