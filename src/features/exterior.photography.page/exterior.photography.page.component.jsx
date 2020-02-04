@@ -10,7 +10,6 @@ import {
 } from 'react-device-detect'
 
 import PhotoSlide from '../../components/photo.slide/photo.slide.component'
-import { Icon } from '../../components/icon/icon.component'
 
 export default class ExteriorPhotographyPage extends React.Component {
   render() {
@@ -23,18 +22,20 @@ export default class ExteriorPhotographyPage extends React.Component {
 
             <Container>
               <Row>
-                <Col sm={7}>
-                  <img width={'100%'} alt='bg' src={'/exterior_01.png'} />
+                <Col sm={7} style={{ padding: '0px', border: '0.5rem solid white' }}>
+                  <img width={'100%'} alt='bg' src={'/exterior_02.jpg'} />
                 </Col>
 
                 <Col sm={5}>
                   <Row>
-                    <a href={'#exteriorPhotography/1'}><button>Watch gallery</button></a>
-                    <Icon name='forward' color='white' size={'2rem'} />
+                    <a href={'#exteriorPhotography/1'}>
+                      <button>Watch gallery <i className='icon-right-open'/></button>
+                    
+                    </a>
                   </Row>
                   <div className='break-1' />
                   <Row>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Aeropan provides extensive solution for exterior architecture photography, which includes aerial, classical and spherical visualisation of a given subject.</p>
                   </Row>
                 </Col>
               </Row>

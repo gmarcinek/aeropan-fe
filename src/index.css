@@ -56,12 +56,12 @@ h2 {
 button {
   border: none;
   background: #475169;
-  width: 120px;
-  height: 40px;
   color: #ffffff;
-  margin-right: 1rem;
   cursor: pointer;
+  padding: 1rem;
   transition: opacity 0.5s;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px black;
 }
 button:hover {
   opacity: 0.6;
@@ -159,8 +159,8 @@ button.secondary {
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-  border: 1px solid #ffffff99;
-  background: #ffffff55!important;
+  border: 2px solid #ffffffcc;
+  background: #000000!important;
 }
 
 .fp-tableCell {

@@ -21,10 +21,12 @@
 }
 .fp-controlArrow.fp-next:after {
   right: 0px!important;
+  text-shadow: 2px 2px 3px #29292961;
   content: '\E80B';
 }
 
 .fp-controlArrow.fp-prev:after {
   left: 15px!important;
+  text-shadow: 2px 2px 3px #29292961;
   content: '\E80A';
 }

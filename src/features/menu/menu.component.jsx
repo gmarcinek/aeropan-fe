@@ -1,9 +1,12 @@
 import React from 'react'
+import {
+  isMobile
+} from 'react-device-detect'
 import './menu.css'
 
 export function MenuComponent() {
   return (
-    <div id={'menu'} className={'menu'}>
+    <div id={'menu'} className={isMobile ? 'menu-mobile' : 'menu'}>
       <ul>
         <li><a href='/#film'>FILMS</a></li>
         <li><a href='#exteriorPhotography'>EXTERIOR</a></li>
