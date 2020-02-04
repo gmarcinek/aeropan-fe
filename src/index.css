@@ -23,20 +23,20 @@ body {
 
 .ap-slide__header {
   position: absolute;
-  top: 2%;
   left: 50%;
+  bottom: 60px;
   width: 100%;
   transform: translate(-50%);
 }
 .ap-galery__header {
   position: absolute;
-  bottom: 10%;
+  bottom: 60px;
   left: 50%;
   transform: translate(-50%);
 }
 .ap-galery__header-top {
   position: absolute;
-  top: 10%;
+  bottom: 60px;
   left: 50%;
   transform: translate(-50%);
 }

@@ -3,7 +3,7 @@ import './google.maps.page.css'
 
 
 
-export default class GoogleMapsPageComponent extends React.Component {
+export default class GoogleMapsPage extends React.Component {
   render() {
     return (
       <div className='section fp-controlArrow__always-visible' id='section-google-maps'>

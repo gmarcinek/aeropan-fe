@@ -1,21 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default class PhotoSlide extends React.Component {
+export default class VideoSlide extends React.Component {
   static defaultProps = {
     titleBold: '',
     titleRegular: '',
-    img: '',
+    src: '',
     index: 0
   }
 
   render() {
-    const { img, index, titleBold, titleRegular } = this.props
+    const { src, index, titleBold, titleRegular } = this.props
     return (
       <div className='slide' id={`section-photography-slide-${index}`}>
-        <div className='fp-bg'>
-          <img className='covered' alt='bg' src={img} />
-        </div>
+        < video
+          loop
+          autoPlay
+          data-autoplay
+          src = {src}
+          muted
+          className='covered'
+          />
+        
         <div className='fp-content ap-galery__header t-white'>
           <h1 style={{ textAlign: 'center', marginBottom: '0' }}>{titleBold} <span style={{ fontWeight: '200' }}>{titleRegular}</span></h1>
         </div>
@@ -24,9 +30,9 @@ export default class PhotoSlide extends React.Component {
   }
 }
 
-PhotoSlide.propTypes = {
+VideoSlide.propTypes = {
   titleBold: PropTypes.string,
   titleRegular: PropTypes.string,
-  img: PropTypes.string,
+  src: PropTypes.string,
   index: PropTypes.number
 }

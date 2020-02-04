@@ -1,0 +1,29 @@
+.menu {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  background: #000;
+  justify-content: space-around;
+}
+.menu ul {
+  display: flex;
+  flex-direction: row;
+}
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.menu li a:hover {
+  text-decoration: none;
+  color: #ff7878;
+}
+.menu li {
+  text-rendering: geometricPrecision;
+  font-size: 1.3rem;
+  font-weight: 300;
+  cursor: pointer;
+  list-style: none;
+  margin-right: 1rem;
+}
