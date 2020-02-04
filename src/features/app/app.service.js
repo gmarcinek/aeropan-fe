@@ -22,14 +22,14 @@ export const FULLPAGE_CONFIG = {
   easingcss3: 'ease',
   loopBottom: false,
   loopTop: false,
-  loopHorizontal: true,
+  loopHorizontal: false,
   continuousVertical: false,
   continuousHorizontal: false,
   scrollHorizontally: true,
   interlockedSlides: true,
   dragAndMove: true,
   offsetSections: false,
-  resetSliders: true,
+  resetSliders: false,
   fadingEffect: true,
 
   scrollOverflow: true,
@@ -69,7 +69,7 @@ export const FULLPAGE_CONFIG = {
 }
 
 export const DESCTOP_IMAGE_SIZE = window.innerWidth
-export const MOBILE_IMAGE_SIZE = window.innerHeight
+export const MOBILE_IMAGE_SIZE = Math.round(window.innerHeight * 1.2)
 export const MOBILE_IMAGES = [
   `https://lh3.googleusercontent.com/uoCrljJKgRAKRs-ZmVQydZ7FJVWw4ROfF6_eX_DBberbe-6Fsg06t5D29iboMHgEluJBYjBtxGY9ibssj9hmqO6kUgushaofIahARwQfatX4OKcWjLpY1Ypm2gdCaqkoyHYqB1yI4xXFn3chIKMccJW94MoZ-xOYetuxsbN8gGjdIKq3q_XSXvGQiQqMlF31GAa28UNb45BPY9n3p8kSDBU7b92v2zHftsPE7NMjxYaUSoJ8-xAAo-uO-O8qLhQq68kmvs7lNGXnR13Z-dozf4xyKLeo7cpzG1m2abYJnqJcG0yRejnsoVjkTynUlNeYz8lepggDvr6i7zU07OBBiZwF4dT0Ay81T-jU6P9zFKFaydNzobQfsipnU1_FDrgttipp2GarqTOiKqQ3P2VVbR2IMdh9TMD08W37DGfSmCkdcHWxnZSm5oB4n6wKTM8iuJVFzLOojFo-01p0KvCe-BDdBkf_Bwxkc0ttWt80Ij48kMJKAh8eOtQalxepReQFfoxKFkykYpb8Qb3YqBe-wQwuFf2uOEvj3OBjVQ_zVeGaylD02K0uS1GiyE4HyrQVBaEnrXIE4jiUaStObkGgwGLB1rQCrK58IG9h14EoVGEyBlmr8awd_aKMaim59_P1rPDualTYZhlA7sdbi_0zpQH3W6hU8dFR3tN0fvnOu-EPCnVhDEHFTSfvls5hJvWfsL0OGhzqvLGgFnpMOY1LPIEAK5JVNDJuHA29qjtv7oZQ2hkt=h${MOBILE_IMAGE_SIZE}`,
 
