@@ -7,6 +7,7 @@ import {
 import {
   BrowserView,
   MobileView,
+  isBrowser
 } from 'react-device-detect'
 
 import PhotoSlide from '../../components/photo.slide/photo.slide.component'
@@ -22,15 +23,21 @@ export default class ExteriorPhotographyPage extends React.Component {
 
             <Container>
               <Row>
-                <Col sm={7} style={{ padding: '0px', border: '0.5rem solid white' }}>
-                  <img width={'100%'} alt='bg' src={'/exterior_02.jpg'} />
+                <Col sm={7} >
+                  <Row>
+                    <img width={'100%'} alt='bg' src={
+                      isBrowser
+                        ? '/exterior_01.png'
+                        : '/exterior_02.jpg'
+                    } style={{ border: '0.5rem solid white' }} />
+                  </Row>
                 </Col>
 
                 <Col sm={5}>
+                  <div className='break-1' />
                   <Row>
                     <a href={'#exteriorPhotography/1'}>
-                      <button>Watch gallery <i className='icon-right-open'/></button>
-                    
+                      <button>Watch gallery <i className='icon-right-open' /></button>
                     </a>
                   </Row>
                   <div className='break-1' />
