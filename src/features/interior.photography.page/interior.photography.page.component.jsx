@@ -29,17 +29,17 @@ export default class InteriorPhotographyPage extends React.Component {
 
                 <Col sm={5}>
                   <Row>
-                    <a href={'#interiorPhotography/1'}><button>Watch gallery</button></a>
-                    <Icon name='forward' color='white' size={'2rem'} />
+                    <a href={'#interiorPhotography/1'}>
+                      <button>Watch gallery <i className='icon-right-open' /></button>
+                    </a>
                   </Row>
                   <div className='break-1' />
                   <Row>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Present your space in better angle</p>
                   </Row>
                 </Col>
               </Row>
             </Container>
-            <div className='break-8' />
           </div>
         </div>
 

@@ -13,7 +13,7 @@ export function MenuComponent() {
         <li><a href='/#interiorPhotography'>INTERIOR</a></li>
         <li><a href='/#aerialPhotography'>AERIAL</a></li>
         <li><a href='#googlemaps'>STREET VIEW</a></li>
-        <li><a href='/#contact'>CONTACT</a></li>
+        <li><a href='#contact'>CONTACT</a></li>
 
         <li>
           <a href='https://pl-pl.facebook.com/pg/aeropan/' target='_blank' rel="noopener noreferrer">

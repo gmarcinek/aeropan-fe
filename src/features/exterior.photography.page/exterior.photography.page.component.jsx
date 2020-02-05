@@ -23,18 +23,15 @@ export default class ExteriorPhotographyPage extends React.Component {
 
             <Container>
               <Row>
-                <Col sm={7} >
-                  <Row>
-                    <img width={'100%'} alt='bg' src={
-                      isBrowser
-                        ? '/exterior_01.png'
-                        : '/exterior_02.jpg'
-                    } style={{ border: '0.5rem solid white' }} />
-                  </Row>
+                <Col sm={7}>
+                  <img width={'100%'} alt='bg' src={
+                    isBrowser
+                      ? '/exterior_01.png'
+                      : '/exterior_02.jpg'
+                  } />
                 </Col>
 
                 <Col sm={5}>
-                  <div className='break-1' />
                   <Row>
                     <a href={'#exteriorPhotography/1'}>
                       <button>Watch gallery <i className='icon-right-open' /></button>
