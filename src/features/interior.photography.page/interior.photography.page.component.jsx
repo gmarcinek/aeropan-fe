@@ -1,9 +1,10 @@
 import React from 'react'
+import './interior.photography.page.css'
 import { Container, Row, Col } from 'react-grid-system'
 import {
   getImagesMobile,
   getImagesDesctop,
-  getThumbnailDesktop
+  getInteriorThumbnailDesktop
 } from './interior.photography.page.service'
 import {
   BrowserView,
@@ -16,7 +17,7 @@ export default class InteriorPhotographyPage extends React.Component {
   render() {
     return (
       <div className='section' id='section-photography'>
-        <div className='slide' id='section-photography-article'>
+        <div className='slide interior-bg' id='section-photography-article'>
           <div className='fp-content t-white'>
             <h1 style={{ textAlign: 'center', marginBottom: '0', width: '100%' }}>AEROPAN <span style={{ fontWeight: '200' }}>INTERIOR PHOTOGRAPHY</span></h1>
             <div className='break-2' />
@@ -40,13 +41,13 @@ export default class InteriorPhotographyPage extends React.Component {
 
                   <div className='break-1' />
                   <Row>
-                    <BrowserView>
-                      {getThumbnailDesktop().map((img, index) => (
-                        <a href={`#interiorPhotography/${index + 1}`}>
-                          <img key={`exterior-desktop-thumb-${index}`} src={img} />
+                    <div className='thumbnail-container'>
+                      {getInteriorThumbnailDesktop().map((img, index) => (
+                        <a href={`#interiorPhotography/${index + 1}`} className='thumbnail' key={`interior-thumbnail-${index}`}>
+                          <img key={`interior-desktop-thumb-${index}`} src={img} />
                         </a>
                       ))}
-                    </BrowserView>
+                    </div>
                   </Row>
                 </Col>
               </Row>

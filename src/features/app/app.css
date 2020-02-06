@@ -30,3 +30,20 @@
   text-shadow: 2px 2px 3px #29292961;
   content: '\E80A';
 }
+
+.thumbnail {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border: 0.2rem solid white;
+  display: flex;
+  flex-direction: row;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.interior-bg {
+  background-image: url()
+}

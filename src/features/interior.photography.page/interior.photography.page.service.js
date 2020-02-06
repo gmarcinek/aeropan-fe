@@ -13,13 +13,13 @@ export const getImagesDesctop = () => {
   })
 }
 
-export const getThumbnailsMobile = () => {
+export const getInteriorThumbnailMobile = () => {
   return INTERIOR_PHOTOGRAPHY_PAGE_MOBILE_IMAGES.map((url) => {
     return template(url)({ size: `s${100}-c` })
   })
 }
 
-export const getThumbnailDesktop = () => {
+export const getInteriorThumbnailDesktop = () => {
   return INTERIOR_PHOTOGRAPHY_PAGE_DESCTOP_IMAGES.map((url) => {
     return template(url)({ size: `s${100}-c` })
   })
