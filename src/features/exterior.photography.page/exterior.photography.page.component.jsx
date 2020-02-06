@@ -1,8 +1,9 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-grid-system'
 import {
-  EXTERIOR_PHOTOGRAPHY_PAGE_MOBILE_IMAGES,
-  EXTERIOR_PHOTOGRAPHY_PAGE_DESCTOP_IMAGES
+  getImagesMobile,
+  getImagesDesctop,
+  getThumbnailDesktop
 } from './exterior.photography.page.service'
 import {
   BrowserView,
@@ -23,7 +24,7 @@ export default class ExteriorPhotographyPage extends React.Component {
 
             <Container>
               <Row>
-                <Col sm={7}>
+                <Col sm={5}>
                   <img width={'100%'} alt='bg' src={
                     isBrowser
                       ? '/exterior_01.png'
@@ -31,7 +32,7 @@ export default class ExteriorPhotographyPage extends React.Component {
                   } />
                 </Col>
 
-                <Col sm={5}>
+                <Col sm={7}>
                   <Row>
                     <a href={'#exteriorPhotography/1'}>
                       <button>Watch gallery <i className='icon-right-open' /></button>
@@ -41,6 +42,14 @@ export default class ExteriorPhotographyPage extends React.Component {
                   <Row>
                     <p>Aeropan provides extensive solution for exterior architecture photography, which includes aerial, classical and spherical visualisation of a given subject.</p>
                   </Row>
+                  <div className='break-1' />
+                  <Row>
+                    <BrowserView>
+                      {getThumbnailDesktop().map((img, index) => (
+                        <img key={`exterior-desktop-thumb-${index}`} src={img} />
+                      ))}
+                    </BrowserView>
+                  </Row>
                 </Col>
               </Row>
             </Container>
@@ -49,14 +58,14 @@ export default class ExteriorPhotographyPage extends React.Component {
         </div>
 
         <BrowserView>
-          {EXTERIOR_PHOTOGRAPHY_PAGE_DESCTOP_IMAGES.map((img, index) => (
-            <PhotoSlide key={`exterior-photoslide-desktop-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular='EXTERIOR PHOTOGRAPHY' />
+          {getImagesDesctop().map((img, index) => (
+            <PhotoSlide key={`interior-photoslide-desktop-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular='EXTERIOR PHOTOGRAPHY' />
           ))}
         </BrowserView>
 
         <MobileView>
-          {EXTERIOR_PHOTOGRAPHY_PAGE_MOBILE_IMAGES.map((img, index) => (
-            <PhotoSlide key={`exterior-photoslide-mobile-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular=' EXTERIOR PHOTOGRAPHY' />
+          {getImagesMobile().map((img, index) => (
+            <PhotoSlide key={`interior-photoslide-mobile-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular=' EXTERIOR PHOTOGRAPHY' />
           ))}
         </MobileView>
       </div>

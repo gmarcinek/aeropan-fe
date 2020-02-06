@@ -1,8 +1,9 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-grid-system'
 import {
-  INTERIOR_PHOTOGRAPHY_PAGE_MOBILE_IMAGES,
-  INTERIOR_PHOTOGRAPHY_PAGE_DESCTOP_IMAGES
+  getImagesMobile,
+  getImagesDesctop,
+  getThumbnailDesktop
 } from './interior.photography.page.service'
 import {
   BrowserView,
@@ -10,7 +11,6 @@ import {
 } from 'react-device-detect'
 
 import PhotoSlide from '../../components/photo.slide/photo.slide.component'
-import { Icon } from '../../components/icon/icon.component'
 
 export default class InteriorPhotographyPage extends React.Component {
   render() {
@@ -23,11 +23,11 @@ export default class InteriorPhotographyPage extends React.Component {
 
             <Container>
               <Row>
-                <Col sm={7}>
+                <Col sm={5}>
                   <img width={'100%'} alt='bg' src={'/interior_01.jpg'} />
                 </Col>
 
-                <Col sm={5}>
+                <Col sm={7}>
                   <Row>
                     <a href={'#interiorPhotography/1'}>
                       <button>Watch gallery <i className='icon-right-open' /></button>
@@ -35,7 +35,18 @@ export default class InteriorPhotographyPage extends React.Component {
                   </Row>
                   <div className='break-1' />
                   <Row>
-                  <p>Present your space in better angle</p>
+                    <p>Present your space in better angle</p>
+                  </Row>
+
+                  <div className='break-1' />
+                  <Row>
+                    <BrowserView>
+                      {getThumbnailDesktop().map((img, index) => (
+                        <a href={`#interiorPhotography/${index + 1}`}>
+                          <img key={`exterior-desktop-thumb-${index}`} src={img} />
+                        </a>
+                      ))}
+                    </BrowserView>
                   </Row>
                 </Col>
               </Row>
@@ -44,13 +55,13 @@ export default class InteriorPhotographyPage extends React.Component {
         </div>
 
         <BrowserView>
-          {INTERIOR_PHOTOGRAPHY_PAGE_DESCTOP_IMAGES.map((img, index) => (
+          {getImagesDesctop().map((img, index) => (
             <PhotoSlide key={`interior-photoslide-desktop-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular='INTERIOR PHOTOGRAPHY' />
           ))}
         </BrowserView>
 
         <MobileView>
-          {INTERIOR_PHOTOGRAPHY_PAGE_MOBILE_IMAGES.map((img, index) => (
+          {getImagesMobile().map((img, index) => (
             <PhotoSlide key={`interior-photoslide-mobile-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular=' INTERIOR PHOTOGRAPHY' />
           ))}
         </MobileView>

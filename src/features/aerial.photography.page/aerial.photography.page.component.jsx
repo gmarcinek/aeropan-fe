@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-grid-system'
 import {
-  AERIAL_PHOTOGRAPHY_PAGE_MOBILE_IMAGES,
-  AERIAL_PHOTOGRAPHY_PAGE_DESCTOP_IMAGES
+  getImagesMobile,
+  getImagesDesctop
 } from './aerial.photography.page.service'
 import {
   BrowserView,
@@ -43,15 +43,16 @@ export default class AerialPhotographyPage extends React.Component {
           </div>
         </div>
 
+        
         <BrowserView>
-          {AERIAL_PHOTOGRAPHY_PAGE_DESCTOP_IMAGES.map((img, index) => (
-            <PhotoSlide key={`aerial-photoslide-desktop-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular='AERIAL PHOTOGRAPHY' />
+          {getImagesDesctop().map((img, index) => (
+            <PhotoSlide key={`interior-photoslide-desktop-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular='AERIAL PHOTOGRAPHY' />
           ))}
         </BrowserView>
 
         <MobileView>
-          {AERIAL_PHOTOGRAPHY_PAGE_MOBILE_IMAGES.map((img, index) => (
-            <PhotoSlide key={`aerial-photoslide-mobile-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular=' AERIAL PHOTOGRAPHY' />
+          {getImagesMobile().map((img, index) => (
+            <PhotoSlide key={`interior-photoslide-mobile-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular=' AERIAL PHOTOGRAPHY' />
           ))}
         </MobileView>
       </div>
