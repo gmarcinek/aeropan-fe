@@ -20,5 +20,20 @@
   #section-google-maps .fp-controlArrow.fp-prev {
     right: 0px!important;
   }
+}
 
+.google-bg::after {
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: 50% 50%; 
+  background-size: cover; 
+  background-image: url('https://lh3.googleusercontent.com/UJPnUZiwty9bsi3yhL2hwPLIlKbX7SCLmimWYw7PtvHohf0ce5pTPYnrxkqv1nQrnpeBIvElJvH9rX-Ald8ZeyLCWdzmlYryV4Rw1guFEprOSlFGcKXuqjKMYB5P0iCbhNO0elXvuTSxm5h857T9uRkG9CKIBpDiAqzX-NfDdx55u2WtMcRbVcXOHHZcZmkYNT9iSUieiOXxhtxeuWGNqM_3KrNC6sNFLvXQGVVwxSgeDGoUuofqDWfuGH6d8KhlTDcukxHXRkkTy0H7CbRF3C0_l-0RwPMrTn8OkNYfw5itk0IczrgAsm8Qvn0FXv0oWDbh6_du4blpqORHqHJxEA5yJZmhiWDoU34IuR4H6iT_unY5wd_Eli70t6wujom9p0Z8tM7tOMDnFfdrXB7e3jehHECYD9-PpojrzaeJXPwNcOGN2QHOOt2yK2-5RybK3w0UcMN7EBnXJ6pIr2QGaBrCm4Y_Q02hUn2DvKwmXPAgiiKJ-zwtYDPqwq7fdUWEBdZtCT4WfJ9nufTcYqkkCYpT9CDS8aaGaHhDETvTkCYaAfntNX7shzmZNBsW8jB-06Zu10EtUBw83IQ4Udtl3Tr3eCrGz_gq7wjhxjdIgsutUV6w39SVAWvIJsWDIp0f6k0xecOZxyNuzQ-HLRrxW6Q0LYFAdf0G_beFJqRkcpm7cEvTkr95oeseT2m6-ueaqk4lS9YNn-PVipRqxYokZFTz58aNvA3b6pKmbGc_7NyxaY1j=w2389-h1291-no');
 }

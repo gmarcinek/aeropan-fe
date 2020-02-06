@@ -5,7 +5,6 @@ export const FULLPAGE_CONFIG = {
   lockAnchors: false,
   anchors: [
     'film',
-    // 'photography',
     'exteriorPhotography',
     'interiorPhotography',
     'aerialPhotography',
@@ -48,11 +47,10 @@ export const FULLPAGE_CONFIG = {
   verticalCentered: true,
   sectionsColor: [
     '#000', // film
-    // 'rgb(39, 38, 39)', // photography
     'rgb(39, 38, 39)', // exterior photography
     'rgb(26, 30, 35)', // interior photography
     'rgb(36, 37, 36)', // aerial photography
-    'rgb(197, 163, 197)', // google maps
+    '#40444e', // google maps
     'rgb(16, 32, 37)' // contact
   ],
   paddingTop: '0px',

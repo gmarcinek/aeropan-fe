@@ -31,8 +31,9 @@ export default class AerialPhotographyPage extends React.Component {
 
                 <Col sm={7}>
                   <Row>
-                    <a href={'#aerialPhotography/1'}><button>Watch gallery</button></a>
-                    <Icon name='forward' color='white' size={'2rem'} />
+                    <a href={'#aerialPhotography/1'}>
+                      <button>Watch gallery <i className='icon-right-open' /></button>
+                    </a>
                   </Row>
                   <div className='break-1' />
                   <Row>
@@ -47,7 +48,6 @@ export default class AerialPhotographyPage extends React.Component {
                 </Col>
               </Row>
             </Container>
-            <div className='break-8' />
           </div>
         </div>
 
