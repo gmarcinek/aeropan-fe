@@ -1,10 +1,11 @@
 import React from 'react'
 import './exterior.photography.page.css'
-import { Container, Row, Col } from 'react-grid-system'
+import { Container, Row, Col, Hidden } from 'react-grid-system'
 import {
   getImagesMobile,
   getImagesDesctop,
-  getExteriorThumbnailDesktop
+  getExteriorThumbnailDesktop,
+  getExteriorThumbnailsMobile
 } from './exterior.photography.page.service'
 import {
   BrowserView,
@@ -25,15 +26,13 @@ export default class ExteriorPhotographyPage extends React.Component {
 
             <Container>
               <Row>
-                <Col sm={5}>
-                  <img width={'100%'} alt='bg' src={
-                    isBrowser
-                      ? '/exterior_01.png'
-                      : '/exterior_02.jpg'
-                  } />
-                </Col>
 
-                <Col sm={7}>
+                <Hidden sm xs>
+                  <Col md={5}>
+                    <img width={'100%'} alt='bg' src='/exterior_01.png' />
+                  </Col>
+                </Hidden>
+                <Col md={7}>
                   <Row>
                     <a href={'#exteriorPhotography/1'}>
                       <button>Watch gallery <i className='icon-right-open' /></button>
@@ -45,13 +44,25 @@ export default class ExteriorPhotographyPage extends React.Component {
                   </Row>
                   <div className='break-1' />
                   <Row>
-                    <div className='thumbnail-container'>
-                      {getExteriorThumbnailDesktop().map((img, index) => (
-                        <a href={`#exteriorPhotography/${index + 1}`} className='thumbnail' key={`exterior-thumbnail-${index}`}>
-                          <img key={`exterior-desktop-thumb-${index}`} src={img} />
-                        </a>
-                      ))}
-                    </div>
+                    <BrowserView>
+                      <div className='thumbnail-container'>
+                        {getExteriorThumbnailDesktop().map((img, index) => (
+                          <a href={`#exteriorPhotography/${index + 1}`} className='thumbnail' key={`exterior-thumbnail-${index}`}>
+                            <img key={`exterior-desktop-thumb-${index}`} src={img} />
+                          </a>
+                        ))}
+                      </div>
+                    </BrowserView>
+
+                    <MobileView>
+                      <div className='thumbnail-container'>
+                        {getExteriorThumbnailsMobile().map((img, index) => (
+                          <a href={`#exteriorPhotography/${index + 1}`} className='thumbnail' key={`exterior-thumbnail-${index}`}>
+                            <img key={`exterior-desktop-thumb-${index}`} src={img} />
+                          </a>
+                        ))}
+                      </div>
+                    </MobileView>
                   </Row>
                 </Col>
               </Row>

@@ -1,10 +1,11 @@
 import React from 'react'
 import './aerial.photography.page.css'
-import { Container, Row, Col } from 'react-grid-system'
+import { Container, Row, Col, Hidden } from 'react-grid-system'
 import {
   getImagesMobile,
   getImagesDesctop,
-  getAerialThumbnailDesktop
+  getAerialThumbnailDesktop,
+  getAerialThumbnailsMobile
 } from './aerial.photography.page.service'
 import {
   BrowserView,
@@ -25,11 +26,12 @@ export default class AerialPhotographyPage extends React.Component {
 
             <Container>
               <Row>
-                <Col sm={5}>
-                  <img width={'100%'} alt='bg' src={'/aerial_01.png'} />
-                </Col>
-
-                <Col sm={7}>
+                <Hidden sm xs>
+                  <Col md={5}>
+                    <img width={'100%'} alt='bg' src={'/aerial_01.png'} />
+                  </Col>
+                </Hidden>
+                <Col md={7}>
                   <Row>
                     <a href={'#aerialPhotography/1'}>
                       <button>Watch gallery <i className='icon-right-open' /></button>
@@ -37,13 +39,25 @@ export default class AerialPhotographyPage extends React.Component {
                   </Row>
                   <div className='break-1' />
                   <Row>
-                    <div className='thumbnail-container'>
-                      {getAerialThumbnailDesktop().map((img, index) => (
-                        <a href={`#aerialPhotography/${index + 1}`} className='thumbnail' key={`aerial-thumbnail-${index}`}>
-                          <img key={`aerial-desktop-thumb-${index}`} src={img} />
-                        </a>
-                      ))}
-                    </div>
+                    <BrowserView>
+                      <div className='thumbnail-container'>
+                        {getAerialThumbnailDesktop().map((img, index) => (
+                          <a href={`#aerialPhotography/${index + 1}`} className='thumbnail' key={`aerial-thumbnail-${index}`}>
+                            <img key={`aerial-desktop-thumb-${index}`} src={img} />
+                          </a>
+                        ))}
+                      </div>
+                    </BrowserView>
+
+                    <MobileView>
+                      <div className='thumbnail-container'>
+                        {getAerialThumbnailsMobile().map((img, index) => (
+                          <a href={`#aerialPhotography/${index + 1}`} className='thumbnail' key={`aerial-thumbnail-${index}`}>
+                            <img key={`aerial-desktop-thumb-${index}`} src={img} />
+                          </a>
+                        ))}
+                      </div>
+                    </MobileView>
                   </Row>
                 </Col>
               </Row>

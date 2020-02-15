@@ -1,10 +1,11 @@
 import React from 'react'
 import './interior.photography.page.css'
-import { Container, Row, Col } from 'react-grid-system'
+import { Container, Row, Col, Hidden } from 'react-grid-system'
 import {
   getImagesMobile,
   getImagesDesctop,
-  getInteriorThumbnailDesktop
+  getInteriorThumbnailDesktop,
+  getInteriorThumbnailMobile
 } from './interior.photography.page.service'
 import {
   BrowserView,
@@ -24,30 +25,42 @@ export default class InteriorPhotographyPage extends React.Component {
 
             <Container>
               <Row>
-                <Col sm={5}>
-                  <img width={'100%'} alt='bg' src={'/interior_01.jpg'} />
-                </Col>
+                <Hidden sm xs>
+                  <Col md={5}>
+                    <img width={'100%'} alt='bg' src={'/interior_01.jpg'} />
+                  </Col>
+                </Hidden>
 
-                <Col sm={7}>
+                <Col md={7}>
                   <Row>
                     <a href={'#interiorPhotography/1'}>
                       <button>Watch gallery <i className='icon-right-open' /></button>
                     </a>
                   </Row>
                   <div className='break-1' />
-                  <Row>
-                    <p>Present your space in better angle</p>
-                  </Row>
 
                   <div className='break-1' />
                   <Row>
-                    <div className='thumbnail-container'>
-                      {getInteriorThumbnailDesktop().map((img, index) => (
-                        <a href={`#interiorPhotography/${index + 1}`} className='thumbnail' key={`interior-thumbnail-${index}`}>
-                          <img key={`interior-desktop-thumb-${index}`} src={img} />
-                        </a>
-                      ))}
-                    </div>
+
+                    <BrowserView>
+                      <div className='thumbnail-container'>
+                        {getInteriorThumbnailDesktop().map((img, index) => (
+                          <a href={`#interiorPhotography/${index + 1}`} className='thumbnail' key={`interior-thumbnail-${index}`}>
+                            <img key={`interior-desktop-thumb-${index}`} src={img} />
+                          </a>
+                        ))}
+                      </div>
+                    </BrowserView>
+
+                    <MobileView>
+                      <div className='thumbnail-container'>
+                        {getInteriorThumbnailMobile().map((img, index) => (
+                          <a href={`#interiorPhotography/${index + 1}`} className='thumbnail' key={`interior-thumbnail-${index}`}>
+                            <img key={`interior-desktop-thumb-${index}`} src={img} />
+                          </a>
+                        ))}
+                      </div>
+                    </MobileView>
                   </Row>
                 </Col>
               </Row>

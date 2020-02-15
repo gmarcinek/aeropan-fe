@@ -20,8 +20,7 @@ export default class GoogleMapsPage extends React.Component {
 
         <div className='slide'>
           <div className='fp-bg'>
-            <iframe title='iframe-1' className='covered'
-              src='https://www.google.com/maps/embed?pb=!4v1580171896473!6m8!1m7!1sCAoSLEFGMVFpcE55OGFlTlQ3ZzBlOUlSaEJYRURPTW82T3U2WkpDekZDR0RBNTJ6!2m2!1d-13.7503812!2d-71.21146379999999!3f0!4f0!5f0.7820865974627469'
+            <iframe title='iframe-2' className='covered' src='https://www.google.com/maps/embed?pb=!4v1580172070946!6m8!1m7!1sCAoSLEFGMVFpcE04RVR5LURXd2RZRWp2WkdyLWJyaS1JNFJOVXducW1QS2Q3dGo5!2m2!1d-13.5048046!2d-71.8179153!3f339.42459808865635!4f-18.720280354658925!5f0.4000000000000002'
               width='100%' height='100%' frameBorder='0' style={{ border: 0 }}></iframe>
           </div>
           <a href={'/#googlemaps'} className='fp-content ap-galery__header-top t-white'>
@@ -31,7 +30,19 @@ export default class GoogleMapsPage extends React.Component {
 
         <div className='slide'>
           <div className='fp-bg'>
-            <iframe title='iframe-2' className='covered' src='https://www.google.com/maps/embed?pb=!4v1580172070946!6m8!1m7!1sCAoSLEFGMVFpcE04RVR5LURXd2RZRWp2WkdyLWJyaS1JNFJOVXducW1QS2Q3dGo5!2m2!1d-13.5048046!2d-71.8179153!3f339.42459808865635!4f-18.720280354658925!5f0.4000000000000002'
+            <iframe title='iframe-1' className='covered'
+              src='https://www.google.com/maps/embed?pb=!4v1581784253678!6m8!1m7!1sCAoSLEFGMVFpcE0tN0Q2c2Jmd2tvTnIzSVZwQnRiRC0yRHdFNWRzcU9ySmxDTzhx!2m2!1d52.2210549!2d20.9742516!3f25.790504267462097!4f-3.64626425823829!5f0.7820865974627469'
+              width='100%' height='100%' frameBorder='0' style={{ border: 0 }}></iframe>
+          </div>
+          <a href={'/#googlemaps'} className='fp-content ap-galery__header-top t-white'>
+            <h1 style={{ textAlign: 'center', marginBottom: '0', width: '100%' }}>AEROPAN <span style={{ fontWeight: '200' }}>GOOGLE MAPS</span></h1>
+          </a>
+        </div>
+
+        <div className='slide'>
+          <div className='fp-bg'>
+            <iframe title='iframe-1' className='covered'
+              src='https://www.google.com/maps/embed?pb=!4v1580171896473!6m8!1m7!1sCAoSLEFGMVFpcE55OGFlTlQ3ZzBlOUlSaEJYRURPTW82T3U2WkpDekZDR0RBNTJ6!2m2!1d-13.7503812!2d-71.21146379999999!3f0!4f0!5f0.7820865974627469'
               width='100%' height='100%' frameBorder='0' style={{ border: 0 }}></iframe>
           </div>
           <a href={'/#googlemaps'} className='fp-content ap-galery__header-top t-white'>
