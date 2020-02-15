@@ -1,6 +1,7 @@
 import React from 'react'
 import {
   isMobile,
+  isBrowser,
   BrowserView
 } from 'react-device-detect'
 import './menu.css'
@@ -9,13 +10,11 @@ export function MenuComponent() {
   return (
     <div id={'menu'} className={'menu'}>
       <ul>
-        <BrowserView>
-          <li><a href='/#film'>FILM</a></li>
-          <li><a href='#exteriorPhotography'>EXTERIOR</a></li>
-          <li><a href='/#interiorPhotography'>INTERIOR</a></li>
-          <li><a href='/#aerialPhotography'>AERIAL</a></li>
-          <li><a href='#googlemaps'>MAPS</a></li>
-        </BrowserView>
+        <BrowserView><li><a href='/#film'>FILM</a></li></BrowserView>
+        <BrowserView><li><a href='#exteriorPhotography'>EXTERIOR</a></li></BrowserView>
+        <BrowserView><li><a href='/#interiorPhotography'>INTERIOR</a></li></BrowserView>
+        <BrowserView><li><a href='/#aerialPhotography'>AERIAL</a></li></BrowserView>
+        <BrowserView><li><a href='#googlemaps'>MAPS</a></li></BrowserView>
 
         <li><a href='#contact'>CONTACT</a></li>
 
