@@ -8,8 +8,19 @@
 * {
   box-sizing: border-box;
 }
+
 img {
   padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff7878;
 }
 
 body {
