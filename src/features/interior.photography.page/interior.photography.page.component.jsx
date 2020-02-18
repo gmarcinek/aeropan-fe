@@ -33,20 +33,21 @@ export default class InteriorPhotographyPage extends React.Component {
 
                 <Col md={7}>
                   <Row>
-                    <a href={'#interiorPhotography/1'}>
-                      <button>Watch gallery <i className='icon-right-open' /></button>
-                    </a>
+                    <BrowserView>
+                      <a href={'#interiorPhotography/1'}>
+                        <button>Watch gallery <i className='icon-right-open' /></button>
+                      </a>
+                    </BrowserView>
                   </Row>
-                  <div className='break-1' />
 
                   <div className='break-1' />
+
                   <Row>
-
                     <BrowserView>
                       <div className='thumbnail-container'>
                         {getInteriorThumbnailDesktop().map((img, index) => (
                           <a href={`#interiorPhotography/${index + 1}`} className='thumbnail' key={`interior-thumbnail-${index}`}>
-                            <img key={`interior-desktop-thumb-${index}`} src={img} />
+                            <img key={`interior-desktop-thumb-${index}`} src={img} alt={`thumb-${index}`} />
                           </a>
                         ))}
                       </div>
@@ -56,7 +57,7 @@ export default class InteriorPhotographyPage extends React.Component {
                       <div className='thumbnail-container'>
                         {getInteriorThumbnailMobile().map((img, index) => (
                           <a href={`#interiorPhotography/${index + 1}`} className='thumbnail' key={`interior-thumbnail-${index}`}>
-                            <img key={`interior-desktop-thumb-${index}`} src={img} />
+                            <img key={`interior-desktop-thumb-${index}`} src={img} alt={`thumb-${index}`} />
                           </a>
                         ))}
                       </div>

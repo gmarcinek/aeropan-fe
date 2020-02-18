@@ -43,6 +43,7 @@ body {
   position: absolute;
   bottom: 60px;
   left: 50%;
+  width: 100%;
   transform: translate(-50%);
 }
 .ap-galery__header-top {

@@ -10,7 +10,6 @@ import {
 import {
   BrowserView,
   MobileView,
-  isBrowser
 } from 'react-device-detect'
 
 import PhotoSlide from '../../components/photo.slide/photo.slide.component'
@@ -26,7 +25,6 @@ export default class ExteriorPhotographyPage extends React.Component {
 
             <Container>
               <Row>
-
                 <Hidden sm xs>
                   <Col md={5}>
                     <img width={'100%'} alt='bg' src='/exterior_01.png' />
@@ -34,13 +32,11 @@ export default class ExteriorPhotographyPage extends React.Component {
                 </Hidden>
                 <Col md={7}>
                   <Row>
-                    <a href={'#exteriorPhotography/1'}>
-                      <button>Watch gallery <i className='icon-right-open' /></button>
-                    </a>
-                  </Row>
-                  <div className='break-1' />
-                  <Row>
-                    <p>Aeropan provides extensive solution for exterior architecture photography, which includes aerial, classical and spherical visualisation of a given subject.</p>
+                    <BrowserView>
+                      <a href={'#exteriorPhotography/1'}>
+                        <button>Watch gallery <i className='icon-right-open' /></button>
+                      </a>
+                    </BrowserView>
                   </Row>
                   <div className='break-1' />
                   <Row>
@@ -48,7 +44,7 @@ export default class ExteriorPhotographyPage extends React.Component {
                       <div className='thumbnail-container'>
                         {getExteriorThumbnailDesktop().map((img, index) => (
                           <a href={`#exteriorPhotography/${index + 1}`} className='thumbnail' key={`exterior-thumbnail-${index}`}>
-                            <img key={`exterior-desktop-thumb-${index}`} src={img} />
+                            <img key={`exterior-desktop-thumb-${index}`} src={img} alt={`thumb-${index}`} />
                           </a>
                         ))}
                       </div>
@@ -58,7 +54,7 @@ export default class ExteriorPhotographyPage extends React.Component {
                       <div className='thumbnail-container'>
                         {getExteriorThumbnailsMobile().map((img, index) => (
                           <a href={`#exteriorPhotography/${index + 1}`} className='thumbnail' key={`exterior-thumbnail-${index}`}>
-                            <img key={`exterior-desktop-thumb-${index}`} src={img} />
+                            <img key={`exterior-desktop-thumb-${index}`} src={img} alt={`thumb-${index}`} />
                           </a>
                         ))}
                       </div>
@@ -67,7 +63,6 @@ export default class ExteriorPhotographyPage extends React.Component {
                 </Col>
               </Row>
             </Container>
-            <div className='break-8' />
           </div>
         </div>
 

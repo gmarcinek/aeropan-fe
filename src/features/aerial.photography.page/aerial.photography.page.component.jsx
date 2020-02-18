@@ -13,7 +13,6 @@ import {
 } from 'react-device-detect'
 
 import PhotoSlide from '../../components/photo.slide/photo.slide.component'
-import { Icon } from '../../components/icon/icon.component'
 
 export default class AerialPhotographyPage extends React.Component {
   render() {
@@ -33,9 +32,11 @@ export default class AerialPhotographyPage extends React.Component {
                 </Hidden>
                 <Col md={7}>
                   <Row>
-                    <a href={'#aerialPhotography/1'}>
-                      <button>Watch gallery <i className='icon-right-open' /></button>
-                    </a>
+                    <BrowserView>
+                      <a href={'#aerialPhotography/1'}>
+                        <button>Watch gallery <i className='icon-right-open' /></button>
+                      </a>
+                    </BrowserView>
                   </Row>
                   <div className='break-1' />
                   <Row>
@@ -43,7 +44,7 @@ export default class AerialPhotographyPage extends React.Component {
                       <div className='thumbnail-container'>
                         {getAerialThumbnailDesktop().map((img, index) => (
                           <a href={`#aerialPhotography/${index + 1}`} className='thumbnail' key={`aerial-thumbnail-${index}`}>
-                            <img key={`aerial-desktop-thumb-${index}`} src={img} />
+                            <img key={`aerial-desktop-thumb-${index}`} src={img} alt={`thumb-${index}`} />
                           </a>
                         ))}
                       </div>
@@ -53,7 +54,7 @@ export default class AerialPhotographyPage extends React.Component {
                       <div className='thumbnail-container'>
                         {getAerialThumbnailsMobile().map((img, index) => (
                           <a href={`#aerialPhotography/${index + 1}`} className='thumbnail' key={`aerial-thumbnail-${index}`}>
-                            <img key={`aerial-desktop-thumb-${index}`} src={img} />
+                            <img key={`aerial-desktop-thumb-${index}`} src={img} alt={`thumb-${index}`} />
                           </a>
                         ))}
                       </div>

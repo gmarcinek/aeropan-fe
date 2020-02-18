@@ -13,13 +13,24 @@
   top: 0px;
   width: 100%;
   display: flex;
-  background: #000;
+  background: transparent;
   justify-content: space-around;
 }
+
 .menu ul {
   display: flex;
   flex-direction: row;
 }
+
+.menu-mobile ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  flex: 1;
+  padding: 0rem 1rem
+}
+
 .menu li a {
   text-decoration: none;
   color: #ffffff;
@@ -34,5 +45,5 @@
   font-weight: 300;
   cursor: pointer;
   list-style: none;
-  margin-right: 1rem;
+  margin-right: 0.75rem;
 }
