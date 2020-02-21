@@ -8,6 +8,7 @@ import GoogleMapsPage from '../google.maps.page/google.maps.page.component'
 import ExteriorPhotographyPage from '../exterior.photography.page/exterior.photography.page.component'
 import InteriorPhotographyPage from '../interior.photography.page/interior.photography.page.component'
 import AerialPhotographyPage from '../aerial.photography.page/aerial.photography.page.component'
+import PhotosPage from '../photos.page/photos.page.component'
 import { Menu } from '../menu'
 
 export default class App extends React.Component {
@@ -27,6 +28,7 @@ export default class App extends React.Component {
                 <AerialPhotographyPage />
                 <GoogleMapsPage />
                 <ContactPage />
+                {/* <PhotosPage /> */}
               </ReactFullpage.Wrapper>
             )
           }}

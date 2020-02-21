@@ -26,12 +26,12 @@ export default class InteriorPhotographyPage extends React.Component {
             <Container>
               <Row>
                 <Hidden sm xs>
-                  <Col md={5}>
+                  <Col md={4}>
                     <img width={'100%'} alt='bg' src={'/interior_01.jpg'} />
                   </Col>
                 </Hidden>
 
-                <Col md={7}>
+                <Col md={8}>
                   <Row>
                     <BrowserView>
                       <a href={'#interiorPhotography/1'}>

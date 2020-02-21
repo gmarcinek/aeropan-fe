@@ -1,20 +1,13 @@
 import React from 'react'
 import VideoSlide from '../../components/video.slide/video.slide.component'
-import {
-  BrowserView,
-} from 'react-device-detect'
 
 export default class FilmPageComponent extends React.Component {
   render() {
     const stadionVideo = 'https://serwer2083856.home.pl/NARODOWY_MAIN_HD_v001.mp4'
-    const peruVideo = 'https://serwer2083856.home.pl/AEROPAN_MAIN_001.mp4'
 
     return (
       <div className='section'>
-        <VideoSlide src={stadionVideo} titleBold='AEROPAN' titleRegular='STADIUM' />
-        <BrowserView>
-          <VideoSlide src={peruVideo} titleBold='AEROPAN' titleRegular='ANDES' />
-        </BrowserView>
+        <VideoSlide src={stadionVideo} titleBold='AEROPAN' titleRegular='FILM PRODUCTION' />
       </div>
     )
   }

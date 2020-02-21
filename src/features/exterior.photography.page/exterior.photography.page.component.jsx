@@ -26,11 +26,11 @@ export default class ExteriorPhotographyPage extends React.Component {
             <Container>
               <Row>
                 <Hidden sm xs>
-                  <Col md={5}>
+                  <Col md={4}>
                     <img width={'100%'} alt='bg' src='/exterior_01.png' />
                   </Col>
                 </Hidden>
-                <Col md={7}>
+                <Col md={8}>
                   <Row>
                     <BrowserView>
                       <a href={'#exteriorPhotography/1'}>

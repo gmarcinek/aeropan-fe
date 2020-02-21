@@ -26,11 +26,11 @@ export default class AerialPhotographyPage extends React.Component {
             <Container>
               <Row>
                 <Hidden sm xs>
-                  <Col md={5}>
+                  <Col md={4}>
                     <img width={'100%'} alt='bg' src={'/aerial_01.png'} />
                   </Col>
                 </Hidden>
-                <Col md={7}>
+                <Col md={8}>
                   <Row>
                     <BrowserView>
                       <a href={'#aerialPhotography/1'}>
