@@ -21,6 +21,15 @@ export function MenuComponent() {
             <i className='aeropan-icon icon-instagram' />
           </a>
         </li>
+
+        <MobileView>
+          <li></li>
+        </MobileView>
+
+        <MobileView>
+          <li></li>
+        </MobileView>
+
         <BrowserView><li><a href='/#film'>FILM</a></li></BrowserView>
         <BrowserView><li><a href='#exteriorPhotography'>EXTERIOR</a></li></BrowserView>
         <BrowserView><li><a href='/#interiorPhotography'>INTERIOR</a></li></BrowserView>
@@ -43,14 +52,6 @@ export function MenuComponent() {
               <i className='aeropan-icon icon-mail' />
             </a>
           </li>
-        </MobileView>
-
-        <MobileView>
-          <li></li>
-        </MobileView>
-
-        <MobileView>
-          <li></li>
         </MobileView>
 
         <BrowserView>
