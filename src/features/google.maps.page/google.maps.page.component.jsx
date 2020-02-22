@@ -19,7 +19,6 @@ export default class GoogleMapsPage extends React.Component {
           </div>
         </div>
 
-
         {GOOGLE_MAPS_ITEMS.map((url, index) => {
           return (
             <div className='slide'>
@@ -27,7 +26,7 @@ export default class GoogleMapsPage extends React.Component {
                 <iframe
                   src={url}
                   key={`map-${index}`}
-                  title='iframe-2'
+                  title={`map-${index}`}
                   className='covered'
                   width='100%'
                   height='100%'
@@ -41,7 +40,6 @@ export default class GoogleMapsPage extends React.Component {
             </div>
           )
         })}
-
 
       </div>
     )
