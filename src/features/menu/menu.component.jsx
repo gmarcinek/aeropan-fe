@@ -35,7 +35,7 @@ export function MenuComponent() {
         <BrowserView><li><a href='/#interiorPhotography'>INTERIOR</a></li></BrowserView>
         <BrowserView><li><a href='/#aerialPhotography'>AERIAL</a></li></BrowserView>
         {/* <BrowserView><li><a href='/#googlemaps'>MAPS</a></li></BrowserView> */}
-        <BrowserView><li><a href='/#treck'>TRECK</a></li></BrowserView>
+        <BrowserView><li><a href='/#trek'>TREK</a></li></BrowserView>
         <BrowserView><li><a href='/#contact'>CONTACT</a></li></BrowserView>
 
         <MobileView>

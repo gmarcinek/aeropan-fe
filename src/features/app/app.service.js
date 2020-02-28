@@ -9,7 +9,7 @@ export const FULLPAGE_CONFIG = {
     'interiorPhotography',
     'aerialPhotography',
     // 'googlemaps',
-    'treck',
+    'trek',
     'contact',
   ],
   navigation: true,
@@ -52,7 +52,7 @@ export const FULLPAGE_CONFIG = {
     'rgb(26, 30, 35)', // interior photography
     'rgb(36, 37, 36)', // aerial photography
     // 'rgb(97, 91, 76)', // google maps
-    'rgb(62, 69, 70)', // treck
+    'rgb(62, 69, 70)', // trek
     'rgb(16, 32, 37)', // contact
   ],
   paddingTop: '0px',

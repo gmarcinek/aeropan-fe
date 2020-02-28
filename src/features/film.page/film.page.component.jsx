@@ -7,7 +7,7 @@ export default class FilmPageComponent extends React.Component {
 
     return (
       <div className='section'>
-        <VideoSlide src={stadionVideo} titleBold='AEROPAN' titleRegular='FILM PRODUCTION' />
+        <VideoSlide src={stadionVideo} titleBold='AEROPAN' titleRegular='FILMS' />
       </div>
     )
   }
