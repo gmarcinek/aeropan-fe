@@ -3,10 +3,13 @@ import './photos.page.css'
 import { Container, Row, Col } from 'react-grid-system'
 import {
   getImagesDesctop,
+  getImagesMobile,
+  getPhotosThumbnailMobile,
   getPhotosThumbnailDesktop,
 } from './photos.page.service'
 import {
   BrowserView,
+  MobileView
 } from 'react-device-detect'
 
 import PhotoSlide from '../../components/photo.slide/photo.slide.component'
@@ -45,6 +48,16 @@ export default class PhotosPage extends React.Component {
                       </div>
                     </BrowserView>
 
+                    <MobileView>
+                      <div className='thumbnail-container'>
+                        {getPhotosThumbnailMobile().map((img, index) => (
+                          <a href={`#trek/${index + 1}`} className='thumbnail' key={`trek-thumbnail-${index}`}>
+                            <img key={`trek-mobile-thumb-${index}`} src={img} alt={`thumb-${index}`} />
+                          </a>
+                        ))}
+                      </div>
+                    </MobileView>
+
                   </Row>
                 </Col>
               </Row>
@@ -57,6 +70,12 @@ export default class PhotosPage extends React.Component {
             <PhotoSlide key={`trek-photoslide-desktop-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular=' TREK' />
           ))}
         </BrowserView>
+
+        <MobileView>
+          {getImagesMobile().map((img, index) => (
+            <PhotoSlide key={`trek-photoslide-mobile-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular=' TREK PHOTOGRAPHY' />
+          ))}
+        </MobileView>
       </div>
     )
   }

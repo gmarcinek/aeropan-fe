@@ -68,13 +68,13 @@ export default class ExteriorPhotographyPage extends React.Component {
 
         <BrowserView>
           {getImagesDesctop().map((img, index) => (
-            <PhotoSlide key={`interior-photoslide-desktop-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular='EXTERIOR PHOTOGRAPHY' />
+            <PhotoSlide key={`exterior-photoslide-desktop-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular='EXTERIOR PHOTOGRAPHY' />
           ))}
         </BrowserView>
 
         <MobileView>
           {getImagesMobile().map((img, index) => (
-            <PhotoSlide key={`interior-photoslide-mobile-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular=' EXTERIOR PHOTOGRAPHY' />
+            <PhotoSlide key={`exterior-photoslide-mobile-${index}`} img={img} index={index} titleBold='AEROPAN' titleRegular=' EXTERIOR PHOTOGRAPHY' />
           ))}
         </MobileView>
       </div>
