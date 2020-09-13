@@ -5,11 +5,11 @@ export const FULLPAGE_CONFIG = {
   lockAnchors: false,
   anchors: [
     'film',
+    'aerialPhotography',
     'exteriorPhotography',
     'interiorPhotography',
-    'aerialPhotography',
-    // 'googlemaps',
     'trek',
+    'googlemaps',
     'contact',
   ],
   navigation: true,
@@ -51,8 +51,8 @@ export const FULLPAGE_CONFIG = {
     'rgb(39, 38, 39)', // exterior photography
     'rgb(26, 30, 35)', // interior photography
     'rgb(36, 37, 36)', // aerial photography
-    // 'rgb(97, 91, 76)', // google maps
     'rgb(62, 69, 70)', // trek
+    'rgb(97, 91, 76)', // google maps
     'rgb(16, 32, 37)', // contact
   ],
   paddingTop: '0px',

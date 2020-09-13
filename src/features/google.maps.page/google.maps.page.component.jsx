@@ -9,7 +9,7 @@ export default class GoogleMapsPage extends React.Component {
         <div className='slide google-bg' id='section-google-article'>
           <div className='fp-content t-white'>
             <h1 style={{ textAlign: 'center', marginBottom: '0', width: '100%' }}>AEROPAN <span style={{ fontWeight: '200' }}>& GOOGLE MAPS</span></h1>
-            <div style={{ textAlign: 'center' }}>over 37 500 000 views</div>
+            <div style={{ textAlign: 'center' }}>over 42 500 000 views</div>
             <div className='break-2' />
             <div style={{ textAlign: 'center' }}>
               <a href={'#googlemaps/1'}>
