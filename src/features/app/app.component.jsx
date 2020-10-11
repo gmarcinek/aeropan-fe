@@ -5,7 +5,6 @@ import { FULLPAGE_CONFIG } from './app.service'
 import FilmPageComponent from '../film.page/film.page.component'
 import ContactPage from '../contact.page/contact.page.component'
 import GoogleMapsPage from '../google.maps.page/google.maps.page.component'
-import ExteriorPhotographyPage from '../exterior.photography.page/exterior.photography.page.component'
 import InteriorPhotographyPage from '../interior.photography.page/interior.photography.page.component'
 import AerialPhotographyPage from '../aerial.photography.page/aerial.photography.page.component'
 import PhotosPage from '../photos.page/photos.page.component'
@@ -24,7 +23,6 @@ export default class App extends React.Component {
               <ReactFullpage.Wrapper>
                 <FilmPageComponent />
                 <AerialPhotographyPage />
-                <ExteriorPhotographyPage />
                 <InteriorPhotographyPage />
                 <PhotosPage />
                 <GoogleMapsPage />

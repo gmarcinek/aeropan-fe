@@ -6,7 +6,7 @@ export const FULLPAGE_CONFIG = {
   anchors: [
     'film',
     'aerialPhotography',
-    'exteriorPhotography',
+    // 'exteriorPhotography',
     'interiorPhotography',
     'trek',
     'googlemaps',

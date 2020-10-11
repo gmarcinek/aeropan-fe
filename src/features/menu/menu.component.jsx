@@ -32,7 +32,7 @@ export function MenuComponent() {
 
         <BrowserView><li><a href='/#film'>FILM</a></li></BrowserView>
         <BrowserView><li><a href='/#aerialPhotography'>AERIAL</a></li></BrowserView>
-        <BrowserView><li><a href='/#exteriorPhotography'>EXTERIOR</a></li></BrowserView>
+        {/* <BrowserView><li><a href='/#exteriorPhotography'>EXTERIOR</a></li></BrowserView> */}
         <BrowserView><li><a href='/#interiorPhotography'>INTERIOR</a></li></BrowserView>
         <BrowserView><li><a href='/#trek'>TREK</a></li></BrowserView>
         <BrowserView><li><a href='/#googlemaps'>MAPS</a></li></BrowserView>
