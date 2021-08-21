@@ -9,6 +9,7 @@ import InteriorPhotographyPage from '../interior.photography.page/interior.photo
 import AerialPhotographyPage from '../aerial.photography.page/aerial.photography.page.component'
 import PhotosPage from '../photos.page/photos.page.component'
 import { Menu } from '../menu'
+import ProductPage from '../product.page/product.page.component'
 
 export default class App extends React.Component {
   render() {
@@ -24,6 +25,7 @@ export default class App extends React.Component {
                 <FilmPageComponent />
                 <AerialPhotographyPage />
                 <InteriorPhotographyPage />
+                <ProductPage />
                 <PhotosPage />
                 <GoogleMapsPage />
                 <ContactPage />

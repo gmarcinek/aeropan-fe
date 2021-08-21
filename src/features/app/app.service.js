@@ -6,8 +6,8 @@ export const FULLPAGE_CONFIG = {
   anchors: [
     'film',
     'aerialPhotography',
-    // 'exteriorPhotography',
     'interiorPhotography',
+    'productPhotography',
     'trek',
     'googlemaps',
     'contact',
@@ -48,9 +48,9 @@ export const FULLPAGE_CONFIG = {
   verticalCentered: true,
   sectionsColor: [
     '#000', // film
-    'rgb(39, 38, 39)', // exterior photography
     'rgb(26, 30, 35)', // interior photography
     'rgb(36, 37, 36)', // aerial photography
+    'rgb(47, 47, 47)', // product
     'rgb(62, 69, 70)', // trek
     'rgb(97, 91, 76)', // google maps
     'rgb(16, 32, 37)', // contact

@@ -1,0 +1,15 @@
+.productPhotography-bg::after {
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: 50% 50%;
+  background-size: cover; 
+  background-image: url('https://lh3.google.com/pw/AM-JKLXTgq0g6N0Lp389wHQyVO_lqeWsdmWZ8-JITzbMljfHlQLEoOIkF8Yl54mZ_NkXZRYCRAVHgECSypcSPbj7WRssuKJM_fI=s1600');
+}
